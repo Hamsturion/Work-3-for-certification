@@ -1,0 +1,20 @@
+:root {
+  --main-color-lite: #344789;
+  --main-color-dark: #112344;
+  --menu-arrow: #1da5e4;
+  --menu-down-bg-hover: #ccc;
+  --menu-text: #fff;
+  --menu-down-bg: #122942;
+  --menu-text-bg: #122942;
+}
+
+.logo h1 {
+  background: linear-gradient(
+    45deg,
+    rgba(11, 19, 38, 1) 0%,
+    rgba(54, 76, 137, 1) 50%,
+    rgba(53, 156, 220, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

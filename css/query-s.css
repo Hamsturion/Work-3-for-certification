@@ -1,0 +1,60 @@
+@media (max-width: 680px) {
+  .content {
+    grid-template-areas:
+      "slider-wrap"
+      "about-wrap"
+      "lectors-wrap"
+      "students-wrap"
+      "footer";
+  }
+
+  #dropdown {
+    position: relative;
+  }
+
+  .sliding {
+    flex-wrap: wrap;
+  }
+
+  .sliding .img {
+    width: calc(100% / 3);
+    height: 100px;
+  }
+
+  .lectors-wrap {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    line-height: 1.3rem;
+  }
+
+  .lector {
+    width: 100%;
+  }
+
+  .login-form {
+    margin-bottom: 20px;
+  }
+
+  .students-wrap {
+    grid-area: students-wrap;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .student:nth-child(1) {
+    min-width: 100%;
+  }
+
+  .student {
+    max-width: calc(50% - 10px);
+    padding: 10px;
+    text-align: justify;
+  }
+}

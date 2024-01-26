@@ -1,0 +1,60 @@
+@media (min-width: 680px) {
+  nav {
+    right: 0;
+  }
+
+  #dropdown {
+    position: relative;
+  }
+
+  .content {
+    grid-template-areas:
+      "slider-wrap"
+      "lectors-wrap"
+      "about-wrap"
+      "students-wrap"
+      "footer";
+  }
+
+  .sliding {
+    flex-wrap: wrap;
+  }
+
+  .sliding .img {
+    width: calc(100% / 3);
+    height: 100px;
+  }
+
+  .lectors-wrap {
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    width: calc(100% - 40px);
+    padding-bottom: 20px;
+    line-height: 1.3rem;
+  }
+
+  .lector {
+    width: 50%;
+  }
+
+  .login-form {
+    float: right;
+    width: 50%;
+    margin: 10px;
+  }
+
+  .students-wrap {
+    grid-area: students-wrap;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .student {
+    max-width: calc(33.33% - 10px);
+    padding: 10px;
+    text-align: justify;
+  }
+}
